@@ -1,12 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/icon-font.css">-->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+
+
+
+    <title>Rayli Raykov</title>
 </head>
+
 <body>
-  <h1>Rayli Raykov</h1>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#about" class="navigation__link trigger">About</a></li>
+                <li class="navigation__item"><a href="#services" class="navigation__link trigger">Services</a></li>
+                <li class="navigation__item"><a href="#github" class="navigation__link trigger">Projects</a></li>
+                <li class="navigation__item"><a href="#testimonials" class="navigation__link trigger">Testimonials</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header">
+        <div class="header__logo-box">
+            <img src="img/rrwhite.png" alt="Logo" class="header__logo">
+        </div>
+
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Rayli Raykov</span>
+                <span class="heading-primary--sub">Designer | Developer</span>
+            </h1>
+
+            <a href="#about" class="btn btn--white btn--animated learn-more">Learn More</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-about">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 id="about" class="heading-secondary">
+                    About Me
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-margin-bottom-small">Rayli Raykov</h3>
+                    <p class="paragraph">
+                        I graduated from West Chester with my Bachelors in Sciences and then proceeded to continue my
+                        education at Rutgers University where I recieved my certificate in being a Full Stack
+                        Developer!
+                    </p>
+                    <hr width="50%" class="u-margin-bottom-small">
+
+                    <h3 class="heading-tertiary u-margin-bottom-small">Premium Web Design</h3>
+                    <p class="paragraph">
+                        All web designs are made with the customers goals in mind. I am here to create sites that are
+                        both eye catching and keep your audience drawn in!
+                    </p>
+                    <hr width="50%" class="u-margin-bottom-small">
+
+                    <h3 class="heading-tertiary u-margin-bottom-small">100% Responsive.. 100% Unique.. 100% YOURS!</h3>
+                    <p class="paragraph">
+                        All designs go through a process of meeting with the client and painting out the perfect dream
+                        structure for your website. Then we get to work on making that dream a reality.
+                    </p>
+                    <hr width="50%" class="u-margin-bottom-small">
+                    <h3 class="heading-tertiary u-margin-bottom-small">Full Stack Software Developer</h3>
+                    <p class="paragraph">
+                        If you have an app or full stack application in mind, I am also your guy! Being a full stack JavaScript developer, I feel very comfortable in creating an app that collects whatever data you need!
+                    </p>
+                    <div class="u-center-text">
+                            <a href="./img/resume.pdf" download class="btn btn--green">Download My Resume!</a>
+                        </div>
+
+                </div>
+                <div class="col-1-of-2">
+                    <div class="composition">
+
+                        <a href="http://www.kappasigmawcu.com" target="_blank"><img srcset="img/kappasigma.png 300w, img/kappasigma.png 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1" class="composition__photo composition__photo--p1"
+                                src="img/kappasigma.png"></a>
+
+                        <a href="http://www.sadloch.com" target="_blank"><img srcset="img/sadloch.png 300w, img/sadloch.png 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 2" class="composition__photo composition__photo--p2"
+                                src="img/sadloch.png"></a>
+
+                        <a href="http://www.justinoquendomusic.com" target="_blank"><img srcset="img/justinoquendomusic.png 300w, img/justinoquendomusic.png 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 3" class="composition__photo composition__photo--p3"
+                                src="img/justinoquendomusic.png"></a>
+
+                        <!--
+                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                            -->
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section-features">
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon  icon-basic-tablet"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Fully Responsive</h3>
+                        <p class="feature-box__text">
+                            All websites are custom made to fit all screen sizes. Phones, tablets, desktops… You can
+                            rest assured, your site will look fantastic on any display.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-compass"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">SEO Optimized</h3>
+                        <p class="feature-box__text">
+                            Designs are made with google search engine optimization in mind. All sites are use keywords
+                            and are structured in a way that makes google favor your content!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-map"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Unique Look</h3>
+                        <p class="feature-box__text">
+                            No cookie cutter content here! Everything is made by you, FOR you. You won’t find another
+                            website like yours on the web. </p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-heart"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Life Time Support</h3>
+                        <p class="feature-box__text">
+                            With the web constantly changing, you can ensure that we’ll stay up to date with the most
+                            recent technologies. Ensuring that your content won’t be left in the back burner. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-tours" id="section-tours">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 id="github" class="heading-secondary">
+                    Recent Projects
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">Scavengr</span>
+                            </h4>
+                            <div class="card__details">
+                                <p class="application-info">Application that allows users to keep track of jobs they
+                                    applied for as well as drag and drop cards depending on stage of job application.</p>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__title-only">Technologies Used:</p>
+                                    <ul class="card__ul-only">
+                                            <li class="underline"><strong>Frontend:</strong></li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>Bootstrap</li>
+                                            <li>JavaScript</li>
+                                            <li>Local Storage</li>
+                                            <hr>
+                                            <li class="underline"><strong>Api's:</strong></li>
+                                            <li>Adzuna API</li>
+                                            <li>Google's Firebase</li>
+                                    </ul>
+                                </div>
+                                <a href="https://rayli208.github.io/Scvngr/" target="_blank" class="btn btn--white">Link Here!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">Dream Catcher</span>
+                            </h4>
+                            <div class="card__details">
+                                <p class="application-info">Dream Catcher is a full stack CRUD app that allows users to create accounts where they log their dreams. Utilizing native speech recognition, users can instantly start recording their dreams!</p>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__title-only">Technologies Used:</p>
+                                    <ul class="card__ul-only">
+                                        <li class="underline"><strong>Frontend:</strong></li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Bootstrap</li>
+                                        <li>JavaScript</li>
+                                        <li>Chart.js</li>
+                                        <hr>
+                                        <li class="underline"><strong>Backend:</strong></li>
+                                        <li>Node</li>
+                                        <li>mySQL</li>
+                                        <li>Sequelize</li>
+                                        <li>Passport Authentication</li>
+                                    </ul>
+                                </div>
+                                <a href="https://infinite-plateau-53508.herokuapp.com/" target="_blank" class="btn btn--white">Link Here!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">GifTastic</span>
+                            </h4>
+                            <div class="card__details">
+                                <p class="application-info">Fun little app that utilizes Giphy’s api to pull memes and help you store them. Press memes to start playing them and heart them to add them to your meme collection!</p>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__title-only">Technologies Used:</p>
+                                    <ul class="card__ul-only">
+                                            <li class="underline"><strong>Frontend:</strong></li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>Bootstrap</li>
+                                            <li>JavaScript</li>
+                                            <li>Local Storage</li>
+                                            <hr>
+                                            <li class="underline"><strong>Api's:</strong></li>
+                                            <li>Giphy API</li>
+                                    </ul>
+                                </div>
+                                <a href="https://rayli208.github.io/GifTastic/" target="_blank" class="btn btn--white">Link Here!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="u-center-text u-margin-top-huge">
+                <a href="https://github.com/rayli208" target="_blank" class="btn btn--green">Link to Github!</a>
+            </div>
+        </section>
+
+        <section class="section-stories">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    Your browser is not supported!
+                </video>
+            </div>
+
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 id="testimonials" class="heading-secondary">
+                    Making people genuinely happy!
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/jakehinkel.png" alt="Person on a tour" class="story__img">
+                        <figcaption class="story__caption">Jacob Hinkel</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Jacob Hinkel</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small">- VP of Kappa Sigma</h3>
+                        <p>
+                            As former Vice President of the Tau Theta chapter of Kappa Sigma at West Chester
+                            University. Rayli Raykov was a highly regarded member, whom provided extremely valuable
+                            services to our fraternity. Rayli often helped at community events and fundraisers for the
+                            Wounded Warriors Foundation. He also personally developed an advanced website for our
+                            chapter. His membership came with many benefits, he is a strong leader and a great role
+                            model.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="story">
+                    <figure class="story__shape">
+                        <img src="img/justinoquendo.JPG" alt="Person on a tour" class="story__img">
+                        <figcaption class="story__caption">Justin Oquendo</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Justin Oquendo</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small">- Music Teacher | Producer</h3>
+                        <p>
+                            Working on my first website was a challenge for me. Throughout the process Rayli showed
+                            great equanimity and knowledge in web design. He created a website that was smooth and easy
+                            to navigate and helped bring my vision to life. You will not be disappointed with his work.
+                            I recommend Rayli Raykov to anyone that needs a professional level website.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-book">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form method="POST" action="https://formspree.io/rayli.raykov@gmail.com" class="form">
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Contact me!
+                                </h2>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full name" id="name" name="name" required>
+                                <label for="name" class="form__label">Full name</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email" class="form__input" name="email" placeholder="Your email" id="email" required>
+                                <label for="email" class="form__label">Email address</label>
+                            </div>
+
+                            <div class="form__group">
+                                <textarea type="text" class="form__input" name="message" placeholder="My Message To You" id="text" required></textarea>
+                                <label for="text" class="form__label">Message</label>
+                            </div>
+                            <div class="form__group">
+                                <button class="btn btn--green" type="submit">Next step &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+
+            <picture class="footer__logo">
+                <source srcset="img/rrbig.png 1x, img/rrbig.png 2x" media="(max-width: 37.5em)">
+                <img srcset="img/rrbig.png 1x, img/rrbig.png 2x" alt="Full logo" src="img/rrbig.png">
+            </picture>
+
+
+
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a target="_blank" href="https://www.linkedin.com/in/rayli-raykov-18b11912a/"><i
+                                    class="fab fa-linkedin footer__links"></i></a></li>
+                        <li class="footer__item"><a target="_blank" href="https://github.com/rayli208"><i class="fab fa-github footer__links"></i></a></li>
+                        <li class="footer__item"><a href="tel:215-667-0266"><i class="fas fa-phone footer__links"></i></a></li>
+                        <li class="footer__item"><a href="mailto:rayli.raykov@gmail.com?Subject=Hello%20again"><i class="fas fa-envelope-open footer__links"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    &copy; Rayli Raykov | 2019
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
